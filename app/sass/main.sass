@@ -83,8 +83,10 @@ body
 
 // header
 header
+	background: url(../../img/bg.jpg) no-repeat center
 	padding-top: 70px
-	background: #bdbdbd
+	background-color: #bdbdbd
+	+bg-size-cover
 	a
 		color: $accent
 		border-bottom: 1px dashed #d53324
@@ -165,7 +167,7 @@ header
 	padding-top: 50px
 	padding-bottom: 50px
 .item
-	box-shadow: -10px 20px 30px 5px #bdbdbd
+	margin-bottom: 10px
 	background: #fff
 	+text-align(center)
 	padding: 20px
@@ -182,6 +184,12 @@ header
 		line-height: 21px
 		font-size: 16px
 		font-weight: 300
+.item-wrapper
+	box-shadow: -10px 20px 30px 5px #bdbdbd
+	padding-bottom: 50px
+	.col-lg-2
+		padding-right: 5px
+		padding-left: 5px
 
 // end header
 
