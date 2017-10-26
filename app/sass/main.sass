@@ -1,0 +1,190 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+// duty classes
+.pos-rel
+	position: relative
+// end duty classes
+// ============= costum navbar ============
+.navbar-default
+	background: $accent
+	opacity: .9
+	ul
+		text-align: center
+		float: none
+		li
+			color: #fff
+			display: inline
+			float: none
+			a
+				display: inline-block
+.navbar-default .navbar-nav>li>a
+	color: #fff
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+	color: #fff
+	background: $accent-darker
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+	background: $accent-darker
+.navbar-default .navbar-toggle .icon-bar
+	background-color: #fff
+.navbar-default .navbar-toggle
+	border: none
+// ============= end costum navbar ============
+
+// header
+header
+	padding-top: 70px
+	background: #bdbdbd
+	a
+		color: $accent
+		border-bottom: 1px dashed #d53324
+		&:hover
+			color: $accent-darker
+	.wrapper-right
+		+text-align(right)
+	img[src*=logo]
+		padding-top: 10px
+		padding-right: 10px
+		border-right: 1px solid #000
+	img[src*=rst]
+		padding-top: 10px
+	p
+		padding-top: 3px
+		line-height: 1.3em
+	h1
+		line-height: 1.2
+		font-size: 33px
+		font-weight: 900
+		font-family: roboto,sans-serif
+	span
+		font-size: 36px
+		padding-top: 30px
+		i
+			color: #008000
+			font-style: normal
+	ul
+		margin-left: -20px
+		li
+			font-size: 16px
+			font-weight: 300
+			margin-bottom: 4px
+			list-style: none
+			&:before 
+				content: '\2014'
+				position: absolute
+				margin-left: -20px
+	.wrapper-main-title
+		padding-left: 10px
+
+	.pre-wrapper-main-title
+		position: relative
+		max-width: 900px
+		img[src*=bracket-1], img[src*=bracket-2]
+			position: absolute
+		img[src*=bracket-1]
+			top: -3px
+		img[src*=bracket-2]
+			bottom: 0
+			right: 0
+		img[src*=discount]
+			top: -50px
+			left: 185px
+			position: absolute
+	input[type*=text]
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 30px
+		border: 2px solid $accent
+		width: 300px
+	input[type*=submit]
+		background: $accent
+		border: 2px solid $accent
+		color: #fff
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 20px
+		padding-right: 20px
+		border-radius: 3px
+		&:hover
+			background: $accent-darker
+			border: 2px solid $accent-darker
+.second-middle-row
+	padding-top: 50px
+	padding-bottom: 20px
+.third-row
+	padding-top: 50px
+	padding-bottom: 50px
+.item
+	box-shadow: -10px 20px 30px 5px #bdbdbd
+	background: #fff
+	+text-align(center)
+	padding: 20px
+	&:hover
+		img
+			opacity: 1
+	img
+		padding-top: 20px
+		border-bottom: 1px solid #000
+		padding-bottom: 20px
+		opacity: .2
+	p
+		padding-top: 20px
+		line-height: 21px
+		font-size: 16px
+		font-weight: 300
+
+// end header
+
+// ============ end ===============
+
+@import "media" // Всегда в конце
