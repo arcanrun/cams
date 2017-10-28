@@ -1,10 +1,10 @@
 $(function() {
 // tabs
-$(".tabs-content > div").not(":first").hide();
+$(".tabs-content .wrapper-tab-item").not(":first").hide();
 $(".tabs-control a").on("click", function(e){
 	e.preventDefault();
 	$(".tabs-control a").removeClass("active").eq($(this).index()).addClass("active");
-	$(".tabs-content div").hide().eq($(this).index()).fadeIn();
+	$(".tabs-content .wrapper-tab-item").hide().eq($(this).index()).fadeIn();
 	console.log($(this).index());
 	console.log($(this).eq());
 });
@@ -24,6 +24,8 @@ $(window).resize(function() {
       $(".tabs-control").css("display", "block");
     }
 });
-
+	//aside-tabs
+	
+	//end aside-tabs
 // end tabs
 });

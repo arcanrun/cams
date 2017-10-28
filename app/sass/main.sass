@@ -305,10 +305,9 @@ header
 			.navbar-toggle
 				span
 					background-color: #fff
-			
-
 		.tabs-control
 			text-align: center
+			margin-bottom: 50px
 			a
 				text-align: center
 				width: 32%
@@ -337,6 +336,52 @@ header
 					border-bottom: 10px solid transparent 
 					border-left: 10px solid transparent 
 					border-right: 10px solid transparent 
+	.tabs-content
+		background: #EBECEE
+		margin: 20px
+		.tabs-control-aside
+			ul>li
+				list-style: none
+				a
+					display: inline-block
+					text-decoration: none
+					color: #000
+					font-size: 18px
+					padding-left: 20px
+					padding-top: 20px
+					padding-bottom: 20px
+			.active
+				position: relative
+				background: #fff
+				font-weight: bold
+				&:after
+					content: ''
+					display: block  
+					position: absolute
+					right: -10px
+					top: 35%
+					width: 0
+					height: 0
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent
+					border-left: 10px solid #fff
+		.col-lg-4
+			p
+				color: #8E99A1
+				text-align: center
+				padding-top: 15px
+		.col-lg-8
+			p
+				padding-top: 10px
+				line-height: 35px
+				font-weight: 300
+				font-family: roboto, sans-serif
+				font-size: 20px
+				b
+					font-weight: normal
+					color: #FF0000
+	.wrapper-tab-item
+		padding-right: 30px
 //end section-3
 
 // ============ end ===============
