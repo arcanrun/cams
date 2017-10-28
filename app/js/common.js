@@ -10,11 +10,11 @@ $(function() {
 // 	console.log($(this).eq());
 // });
 
-// // mobile
-// $("#show-tabs").on("click", function(){
-// 	$(".tabs-control").fadeToggle();
+// mobile
+$("#show-tabs").on("click", function(){
+	$(".tabs-control").fadeToggle();
 
-// });
+});
 
 
 // //show blc when widnow's size is wider then 767
@@ -33,11 +33,15 @@ $(function() {
 
 // ====================== tabs - v2 ==================== 
 // tab on load
-var tab;
+var tab = 0;
 // tab on click
 $(".tabs-control a").on("click", function(e){
 	e.preventDefault();
 	$(".tabs-control a").removeClass("active").eq($(this).index()).addClass("active");
+	
+	//reset aside
+	$(".tabs-control-aside li").removeClass("active").parent().children("li:first").addClass("active");
+
 	tab = $(".tabs-control a.active").index();
 
 	switch(tab) {
@@ -70,10 +74,18 @@ $(".tabs-control-aside a").on("click", function(e){
  			switch(aside) {
  				case 0:
  				$(".tab-img img").attr("src","img/compl-1.jpg")
+ 				$(".item-title").html("Комплект 1 (1 камеры)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/1");
+
+ 				$(".item-price").html("5070 руб");
  				console.log("aside 1.1");
  				break;
  				case 1:
- 				$(".tab-img img").attr("src","img/compl-12.jpg")
+ 				$(".tab-img img").attr("src","img/compl-12.jpg");
+ 				$(".item-title").html("Комплект 2 (2 камеры)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/2");
+
+ 				$(".item-price").html("6900 руб");
  				console.log("aside 1.2");
  				break;
  				case 2:
