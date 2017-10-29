@@ -292,6 +292,29 @@ header
 
 //section-3
 .section-3
+	.section-3-header
+		padding-bottom: 40px
+		position: relative
+		h3
+			padding-left: 20px
+			padding-right: 20px
+			font-size: 48px
+			font-weight: bold
+			text-transform: uppercase
+			color: #000
+		p
+			line-height: 35px
+			font-size: 25px
+			font-weight: 300
+			font-family: roboto,sans-serif
+			padding-right: 20px
+			padding-left: 20px
+		img
+			position: absolute
+		img[src*=l]
+			left: 0
+		img[src*=r]
+			right: 0
 	.wrapper-tab
 		.mnu-toggle-blc
 			display: none
@@ -336,6 +359,26 @@ header
 					border-bottom: 10px solid transparent 
 					border-left: 10px solid transparent 
 					border-right: 10px solid transparent 
+		.tabs-control-2
+			background: #EBECEE
+			margin-left: 20px
+			margin-right: 20px
+			padding: 20px
+			p
+				position: relative
+				top: -13px
+				display: inline
+				font-size: 20px
+				margin-top: -10px
+			.input-custom
+				cursor: pointer
+				padding: 17px
+				border: 1px solid #808D96
+				border-radius: 2px
+				display: inline-block
+				margin-right: 10px
+			.active-input-custom
+				background: url(../../img/checker.png) no-repeat center
 	.tabs-content
 		background: #EBECEE
 		margin: 20px

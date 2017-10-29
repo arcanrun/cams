@@ -76,20 +76,70 @@ $(".tabs-control-aside a").on("click", function(e){
  				$(".tab-img img").attr("src","img/compl-1.jpg")
  				$(".item-title").html("Комплект 1 (1 камеры)");
  				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/1");
-
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 4/4");
  				$(".item-price").html("5070 руб");
  				console.log("aside 1.1");
  				break;
+
  				case 1:
  				$(".tab-img img").attr("src","img/compl-12.jpg");
  				$(".item-title").html("Комплект 2 (2 камеры)");
  				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/2");
-
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 4/4");
  				$(".item-price").html("6900 руб");
  				console.log("aside 1.2");
  				break;
+
  				case 2:
- 				console.log("3");
+ 				$(".tab-img img").attr("src","img/compl-13.jpg");
+ 				$(".item-title").html("Комплект 3 (3 камеры)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/3");
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 4/4");
+ 				$(".item-price").html("8730 руб");
+ 				console.log("aside 1.3");
+ 				break;
+
+ 				case 3:
+ 				$(".tab-img img").attr("src","img/compl-14.jpg");
+ 				$(".item-title").html("Комплект 4 (4 камеры)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/4");
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 4/4");
+ 				$(".item-price").html("10560 руб");
+ 				console.log("aside 1.4");
+ 				break;
+
+ 				case 4:
+ 				$(".tab-img img").attr("src","img/compl-15.jpg");
+ 				$(".item-title").html("Комплект 5 (5 камер)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/5");
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 8/4");
+ 				$(".item-price").html("13570 руб");
+ 				console.log("aside 1.5");
+ 				break;
+
+ 				case 5:
+ 				$(".tab-img img").attr("src","img/compl-16.jpg");
+ 				$(".item-title").html("Комплект 6 (6 камер)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/6");
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 8/4");
+ 				$(".item-price").html("15360 руб");
+ 				console.log("aside 1.6");
+ 				break;
+
+ 				case 6:
+ 				$(".tab-img img").attr("src","img/compl-17.jpg");
+ 				$(".item-title").html("Комплект 7 (7 камер)");
+ 				$(".item-li-1").html("Кол-во камер ул./внутр.: Улица/6");
+ 				$(".item-li-4").html("Кол-во каналов видео/аудио: 8/4");
+ 				$(".item-price").html("17190 руб");
+ 				console.log("aside 1.7");
+ 				break;
+
+ 				case 7:
+ 				$(".tab-img img").attr("src","img/compl-8.jpg");
+ 				$(".item-title").html("");
+ 				$(".item-li-1, .item-li-2, .item-li-3, .item-li-4, .item-price").html("");
+ 				console.log("aside 1.8");
  				break;
  				default:
  				console.log("default");
@@ -119,7 +169,20 @@ $(".tabs-control-aside a").on("click", function(e){
 
  		// tab == 2
  	});
+// end aside
 
+// quality
+	//quality var global
+	var quality = 0
+$(".input-custom").on("click", function(){
+	$(".input-custom").removeClass("active-input-custom").siblings().css("font-weight", "normal");
+	$(this).addClass("active-input-custom");
+	$(this).siblings().css("font-weight", "bold");
+	quality = $(this).parent().index();
+	console.log(quality);
+	
+});
+// end quality
 
 
 });
