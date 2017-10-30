@@ -185,4 +185,31 @@ $(".input-custom").on("click", function(){
 // end quality
 
 
+
+// owl carousel
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    dots:true,
+    center:true,
+    responsive:{
+        768:{
+            items:4,
+            nav:true,
+            
+        },
+        992:{
+        		items:4,
+            nav:true,
+            
+        },
+        1200:{
+            items:4,
+            nav:true,
+            
+        }
+    }
+})
+
 });
