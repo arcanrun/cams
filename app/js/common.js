@@ -189,10 +189,12 @@ $(".input-custom").on("click", function(){
 // owl carousel
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:2,
     responsiveClass:true,
     dots:true,
+    nav:true,
     center:true,
+    navText:"<div>></div><div><</div>",
     responsive:{
         768:{
             items:4,
