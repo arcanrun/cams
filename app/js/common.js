@@ -194,10 +194,10 @@ $('.owl-carousel').owlCarousel({
     dots:true,
     nav:true,
     center:true,
-    navText:"<div>></div><div><</div>",
+    navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>","<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
     responsive:{
-        768:{
-            items:4,
+        0:{
+            items:1,
             nav:true,
             
         },
