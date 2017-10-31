@@ -1,5 +1,21 @@
-$(function() {
-	
+$(document).ready(function(){
+	// waypoints
+$(".click-1").on("click", function(e){ 
+	$('body, html').animate({
+			scrollTop: $('#section-3').offset().top -100
+		}, 1000);
+	});
+$(".click-2").on("click", function(e){ 
+	$('body, html').animate({
+			scrollTop: $('#section-2').offset().top -50
+		}, 1000);
+	});
+$(".click-3").on("click", function(e){ 
+	$('body, html').animate({
+			scrollTop: $('#section-1').offset().top -50
+		}, 1000);
+	});
+// end waypoints
 // // tabs
 // $(".tabs-content .wrapper-tab-item").not(":first").hide();
 // $(".tabs-control a").on("click", function(e){
@@ -221,4 +237,5 @@ $('.owl-carousel').owlCarousel({
       'imageFadeDuration': 200,
       'resizeDuration': 200
     })
+
 });
