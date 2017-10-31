@@ -213,5 +213,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-
+// lightBox
+ lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'fadeDuration': 200,
+      'imageFadeDuration': 200,
+      'resizeDuration': 200
+    })
 });
